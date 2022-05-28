@@ -49,7 +49,7 @@
             this.dgvAttendance.AllowUserToDeleteRows = false;
             this.dgvAttendance.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAttendance.Location = new System.Drawing.Point(12, 71);
+            this.dgvAttendance.Location = new System.Drawing.Point(12, 203);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvAttendance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -61,7 +61,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(564, 311);
+            this.ClientSize = new System.Drawing.Size(636, 443);
             this.Controls.Add(this.dgvAttendance);
             this.Controls.Add(this.lblAttendance);
             this.Name = "frmAttendance";
