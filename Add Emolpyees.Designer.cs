@@ -28,58 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAddDegree = new System.Windows.Forms.Button();
-            this.lblEmployeeDegree = new System.Windows.Forms.Label();
-            this.txtEmployeeLast = new System.Windows.Forms.TextBox();
-            this.lblEmpLsetName = new System.Windows.Forms.Label();
+            this.lblCertificate = new System.Windows.Forms.Label();
+            this.lblDayOfBirthday = new System.Windows.Forms.Label();
             this.txtEmployeeName = new System.Windows.Forms.TextBox();
             this.lblEmpName = new System.Windows.Forms.Label();
-            this.lstAddDegree = new System.Windows.Forms.ListBox();
+            this.lstCertificate = new System.Windows.Forms.ListBox();
             this.lblAddEmployee = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.txtEmployeeNo = new System.Windows.Forms.TextBox();
             this.lblEmployeeNo = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnAddCertificate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnAddDegree
+            // lblCertificate
             // 
-            this.btnAddDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddDegree.Location = new System.Drawing.Point(370, 380);
-            this.btnAddDegree.Name = "btnAddDegree";
-            this.btnAddDegree.Size = new System.Drawing.Size(130, 33);
-            this.btnAddDegree.TabIndex = 19;
-            this.btnAddDegree.Text = "Add";
-            this.btnAddDegree.UseVisualStyleBackColor = true;
-            this.btnAddDegree.Click += new System.EventHandler(this.btnAddDegree_Click);
+            this.lblCertificate.AutoSize = true;
+            this.lblCertificate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCertificate.Location = new System.Drawing.Point(246, 254);
+            this.lblCertificate.Name = "lblCertificate";
+            this.lblCertificate.Size = new System.Drawing.Size(109, 25);
+            this.lblCertificate.TabIndex = 18;
+            this.lblCertificate.Text = "Certificate";
             // 
-            // lblEmployeeDegree
+            // lblDayOfBirthday
             // 
-            this.lblEmployeeDegree.AutoSize = true;
-            this.lblEmployeeDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeDegree.Location = new System.Drawing.Point(172, 258);
-            this.lblEmployeeDegree.Name = "lblEmployeeDegree";
-            this.lblEmployeeDegree.Size = new System.Drawing.Size(183, 25);
-            this.lblEmployeeDegree.TabIndex = 18;
-            this.lblEmployeeDegree.Text = "Employee Degree";
-            // 
-            // txtEmployeeLast
-            // 
-            this.txtEmployeeLast.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployeeLast.Location = new System.Drawing.Point(361, 185);
-            this.txtEmployeeLast.Name = "txtEmployeeLast";
-            this.txtEmployeeLast.Size = new System.Drawing.Size(413, 31);
-            this.txtEmployeeLast.TabIndex = 17;
-            // 
-            // lblEmpLsetName
-            // 
-            this.lblEmpLsetName.AutoSize = true;
-            this.lblEmpLsetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpLsetName.Location = new System.Drawing.Point(124, 188);
-            this.lblEmpLsetName.Name = "lblEmpLsetName";
-            this.lblEmpLsetName.Size = new System.Drawing.Size(231, 25);
-            this.lblEmpLsetName.TabIndex = 16;
-            this.lblEmpLsetName.Text = "Employee\'s Last Name";
+            this.lblDayOfBirthday.AutoSize = true;
+            this.lblDayOfBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDayOfBirthday.Location = new System.Drawing.Point(192, 191);
+            this.lblDayOfBirthday.Name = "lblDayOfBirthday";
+            this.lblDayOfBirthday.Size = new System.Drawing.Size(163, 25);
+            this.lblDayOfBirthday.TabIndex = 16;
+            this.lblDayOfBirthday.Text = "Day Of Birthday";
             // 
             // txtEmployeeName
             // 
@@ -99,18 +80,21 @@
             this.lblEmpName.TabIndex = 14;
             this.lblEmpName.Text = "Employee Name";
             // 
-            // lstAddDegree
+            // lstCertificate
             // 
-            this.lstAddDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstAddDegree.FormattingEnabled = true;
-            this.lstAddDegree.ItemHeight = 25;
-            this.lstAddDegree.Items.AddRange(new object[] {
-            "HTC"});
-            this.lstAddDegree.Location = new System.Drawing.Point(361, 245);
-            this.lstAddDegree.Name = "lstAddDegree";
-            this.lstAddDegree.Size = new System.Drawing.Size(335, 129);
-            this.lstAddDegree.TabIndex = 13;
-            this.lstAddDegree.Click += new System.EventHandler(this.lstAddDegree_Click);
+            this.lstCertificate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstCertificate.FormattingEnabled = true;
+            this.lstCertificate.ItemHeight = 25;
+            this.lstCertificate.Items.AddRange(new object[] {
+            "Tawjihi",
+            "Bachelor",
+            "Master",
+            "PhD"});
+            this.lstCertificate.Location = new System.Drawing.Point(361, 245);
+            this.lstCertificate.Name = "lstCertificate";
+            this.lstCertificate.Size = new System.Drawing.Size(335, 104);
+            this.lstCertificate.TabIndex = 13;
+            this.lstCertificate.Click += new System.EventHandler(this.lstAddDegree_Click);
             // 
             // lblAddEmployee
             // 
@@ -131,7 +115,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "a->z",
             "z ->a"});
-            this.comboBox1.Location = new System.Drawing.Point(545, 381);
+            this.comboBox1.Location = new System.Drawing.Point(545, 360);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(141, 28);
             this.comboBox1.TabIndex = 25;
@@ -167,24 +151,43 @@
             this.lblEmployeeNo.TabIndex = 27;
             this.lblEmployeeNo.Text = "Employee No";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(361, 190);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(282, 26);
+            this.dateTimePicker1.TabIndex = 29;
+            // 
+            // btnAddCertificate
+            // 
+            this.btnAddCertificate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCertificate.Location = new System.Drawing.Point(370, 359);
+            this.btnAddCertificate.Name = "btnAddCertificate";
+            this.btnAddCertificate.Size = new System.Drawing.Size(130, 33);
+            this.btnAddCertificate.TabIndex = 19;
+            this.btnAddCertificate.Text = "Add";
+            this.btnAddCertificate.UseVisualStyleBackColor = true;
+            this.btnAddCertificate.Click += new System.EventHandler(this.btnAddDegree_Click);
+            // 
             // frmAddEmolpyees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1081, 513);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtEmployeeNo);
             this.Controls.Add(this.lblEmployeeNo);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblAddEmployee);
-            this.Controls.Add(this.btnAddDegree);
-            this.Controls.Add(this.lblEmployeeDegree);
-            this.Controls.Add(this.txtEmployeeLast);
-            this.Controls.Add(this.lblEmpLsetName);
+            this.Controls.Add(this.btnAddCertificate);
+            this.Controls.Add(this.lblCertificate);
+            this.Controls.Add(this.lblDayOfBirthday);
             this.Controls.Add(this.txtEmployeeName);
             this.Controls.Add(this.lblEmpName);
-            this.Controls.Add(this.lstAddDegree);
+            this.Controls.Add(this.lstCertificate);
             this.Name = "frmAddEmolpyees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Emolpyees";
@@ -196,17 +199,17 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnAddDegree;
-        private System.Windows.Forms.Label lblEmployeeDegree;
-        private System.Windows.Forms.TextBox txtEmployeeLast;
-        private System.Windows.Forms.Label lblEmpLsetName;
+        private System.Windows.Forms.Label lblCertificate;
         private System.Windows.Forms.TextBox txtEmployeeName;
         private System.Windows.Forms.Label lblEmpName;
-        private System.Windows.Forms.ListBox lstAddDegree;
+        private System.Windows.Forms.ListBox lstCertificate;
         private System.Windows.Forms.Label lblAddEmployee;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox txtEmployeeNo;
         private System.Windows.Forms.Label lblEmployeeNo;
+        public System.Windows.Forms.Label lblDayOfBirthday;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnAddCertificate;
     }
 }

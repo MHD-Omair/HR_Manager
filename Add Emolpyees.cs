@@ -17,7 +17,7 @@ namespace HR_Manager_AD0667
             InitializeComponent();
 
             AddDegreeBindingSource.DataSource = addDegree;
-            lstAddDegree.DataSource = AddDegreeBindingSource;
+            lstCertificate.DataSource = AddDegreeBindingSource;
         }
         private void btnAddDegree_Click(object sender, EventArgs e)
         {
@@ -53,7 +53,7 @@ namespace HR_Manager_AD0667
         private void lstAddDegree_Click(object sender, EventArgs e)
         {
             ListBox listBox = (ListBox)sender;
-            int i = lstAddDegree.SelectedIndex;
+            int i = lstCertificate.SelectedIndex;
             if (i >= 0)
             {
                 DialogResult result = MessageBox.Show("Would you like to delete "
@@ -72,7 +72,7 @@ namespace HR_Manager_AD0667
             // set the data source for the binding
             AddDegreeBindingSource.DataSource = addDegree;
             // set the binding to the listbox
-            lstAddDegree.DataSource = AddDegreeBindingSource;
+            lstCertificate.DataSource = AddDegreeBindingSource;
 
             StudentCounter++;
             txtEmployeeNo.Text = "EMP_" + StudentCounter;
@@ -86,9 +86,8 @@ namespace HR_Manager_AD0667
         {
             StudentCounter++;
             txtEmployeeNo.Text = "EMP_" + StudentCounter;
-            txtEmployeeName.Text = String.Empty;
-            txtEmployeeLast.Text = String.Empty;
-            lstAddDegree.SelectedIndex = 0;
+            txtEmployeeName.Text = string.Empty;
+            lstCertificate.SelectedIndex = 0;
             txtEmployeeName.Focus();
         }
     }
