@@ -13,16 +13,16 @@ namespace HR_Manager_AD0667
         public DateTime DateOfBirth { get; set; }
         public string Certificate { get; set; }
 
+        public Employee()
+        {
+
+        }
         public Employee(string empId, string name, DateTime dateTime, string certificate)
         {
             EmpId = empId;
             Name = name;
             DateOfBirth = dateTime;
             Certificate = certificate;
-        }
-        public Employee()
-        {
-
         }
         public string EmployeeReport()
         {
