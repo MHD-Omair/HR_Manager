@@ -25,5 +25,29 @@ namespace HR_Manager_AD0667
 
             return EmployeeTable;
         }
+        public static Employee GetEmployee(int id)
+        {
+            return null;
+        }
+        public static void CreatEmployee(Employee employee)
+        {
+            string commandString = string.Format(
+            "Insert into Employee (EmployeeName) Values('{0}')",employee.Name);
+            OleDbCommand command = new OleDbCommand(connectionString, connection);
+            connection.Close();           
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+        public static void UpdateEmployee(Employee employee)
+        {
+            string commandString = string.Format(
+                        "Update into Employee (EmployeeName) Values('{0}')", employee.Name);
+            OleDbCommand command = new OleDbCommand(connectionString, connection);
+            connection.Close();
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }
