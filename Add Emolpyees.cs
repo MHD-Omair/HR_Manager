@@ -82,13 +82,14 @@ namespace HR_Manager_AD0667
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            Employee employee = new Employee();
-            employee.EmpId = txtEmployeeDi.Text;
-            employee.Name = txtEmployeeName.Text;
-            employee.DateOfBirth = dtpEmployeeDOB.Value;
-            employee.Certificate = lstCertificate.SelectedItem.ToString();
+            Employee newEmployee = new Employee();
+            newEmployee.EmpId = txtEmployeeDi.Text;
+            newEmployee.Name = txtEmployeeName.Text;
+            newEmployee.DateOfBirth = dtpEmployeeDOB.Value;
+            newEmployee.Certificate = lstCertificate.SelectedItem.ToString();
 
-            MessageBox.Show("Employee added successfully \n" + employee.EmployeeReport());
+            MessageBox.Show("Employee added successfully \n" + newEmployee.EmployeeReport());
+            employees.Add(newEmployee);
             ClearScreen();
         }
         private void ClearScreen()
