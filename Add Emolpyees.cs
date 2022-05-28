@@ -75,17 +75,22 @@ namespace HR_Manager_AD0667
             lstCertificate.DataSource = AddDegreeBindingSource;
 
             StudentCounter++;
-            txtEmployeeNo.Text = "EMP_" + StudentCounter;
+            txtEmployeeDi.Text = "EMP_" + StudentCounter;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            Employee employee = new Employee();
+            employee.EmpId = txtEmployeeDi.Text;
+            employee.Name = txtEmployeeName.Text;
+            employee.
+
             ClearScreen();
         }
         private void ClearScreen()
         {
             StudentCounter++;
-            txtEmployeeNo.Text = "EMP_" + StudentCounter;
+            txtEmployeeDi.Text = "EMP_" + StudentCounter;
             txtEmployeeName.Text = string.Empty;
             lstCertificate.SelectedIndex = 0;
             txtEmployeeName.Focus();

@@ -36,9 +36,9 @@
             this.lblAddEmployee = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.txtEmployeeNo = new System.Windows.Forms.TextBox();
-            this.lblEmployeeNo = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtEmployeeDi = new System.Windows.Forms.TextBox();
+            this.lblEmployeeDi = new System.Windows.Forms.Label();
+            this.dtpEmployeeDOB = new System.Windows.Forms.DateTimePicker();
             this.btnAddCertificate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -132,32 +132,32 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // txtEmployeeNo
+            // txtEmployeeDi
             // 
-            this.txtEmployeeNo.Enabled = false;
-            this.txtEmployeeNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployeeNo.Location = new System.Drawing.Point(361, 83);
-            this.txtEmployeeNo.Name = "txtEmployeeNo";
-            this.txtEmployeeNo.Size = new System.Drawing.Size(256, 31);
-            this.txtEmployeeNo.TabIndex = 28;
+            this.txtEmployeeDi.Enabled = false;
+            this.txtEmployeeDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeDi.Location = new System.Drawing.Point(361, 83);
+            this.txtEmployeeDi.Name = "txtEmployeeDi";
+            this.txtEmployeeDi.Size = new System.Drawing.Size(256, 31);
+            this.txtEmployeeDi.TabIndex = 28;
             // 
-            // lblEmployeeNo
+            // lblEmployeeDi
             // 
-            this.lblEmployeeNo.AutoSize = true;
-            this.lblEmployeeNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeNo.Location = new System.Drawing.Point(215, 86);
-            this.lblEmployeeNo.Name = "lblEmployeeNo";
-            this.lblEmployeeNo.Size = new System.Drawing.Size(140, 25);
-            this.lblEmployeeNo.TabIndex = 27;
-            this.lblEmployeeNo.Text = "Employee No";
+            this.lblEmployeeDi.AutoSize = true;
+            this.lblEmployeeDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeDi.Location = new System.Drawing.Point(222, 86);
+            this.lblEmployeeDi.Name = "lblEmployeeDi";
+            this.lblEmployeeDi.Size = new System.Drawing.Size(133, 25);
+            this.lblEmployeeDi.TabIndex = 27;
+            this.lblEmployeeDi.Text = "Employee DI";
             // 
-            // dateTimePicker1
+            // dtpEmployeeDOB
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(361, 190);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(282, 26);
-            this.dateTimePicker1.TabIndex = 29;
+            this.dtpEmployeeDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEmployeeDOB.Location = new System.Drawing.Point(361, 190);
+            this.dtpEmployeeDOB.Name = "dtpEmployeeDOB";
+            this.dtpEmployeeDOB.Size = new System.Drawing.Size(282, 26);
+            this.dtpEmployeeDOB.TabIndex = 29;
             // 
             // btnAddCertificate
             // 
@@ -176,9 +176,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1081, 513);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.txtEmployeeNo);
-            this.Controls.Add(this.lblEmployeeNo);
+            this.Controls.Add(this.dtpEmployeeDOB);
+            this.Controls.Add(this.txtEmployeeDi);
+            this.Controls.Add(this.lblEmployeeDi);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblAddEmployee);
@@ -206,10 +206,10 @@
         private System.Windows.Forms.Label lblAddEmployee;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.TextBox txtEmployeeNo;
-        private System.Windows.Forms.Label lblEmployeeNo;
+        private System.Windows.Forms.TextBox txtEmployeeDi;
+        private System.Windows.Forms.Label lblEmployeeDi;
         public System.Windows.Forms.Label lblDayOfBirthday;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpEmployeeDOB;
         private System.Windows.Forms.Button btnAddCertificate;
     }
 }

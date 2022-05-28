@@ -10,14 +10,14 @@ namespace HR_Manager_AD0667
     {
         public string EmpId { get; set; }
         public string Name { get; set; }
-        public DateTime DateTime { get; set; }
+        public DateTime DateOfBirth { get; set; }
         public string Certificate { get; set; }
 
         public Employee(string empId, string name, DateTime dateTime, string certificate)
         {
             EmpId = empId;
             Name = name;
-            DateTime = dateTime;
+            DateOfBirth = dateTime;
             Certificate = certificate;
         }
         public Employee()
