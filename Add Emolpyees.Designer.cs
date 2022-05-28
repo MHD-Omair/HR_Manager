@@ -44,9 +44,10 @@
             // 
             // btnAddDegree
             // 
-            this.btnAddDegree.Location = new System.Drawing.Point(294, 235);
+            this.btnAddDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddDegree.Location = new System.Drawing.Point(370, 380);
             this.btnAddDegree.Name = "btnAddDegree";
-            this.btnAddDegree.Size = new System.Drawing.Size(75, 23);
+            this.btnAddDegree.Size = new System.Drawing.Size(130, 33);
             this.btnAddDegree.TabIndex = 19;
             this.btnAddDegree.Text = "Add";
             this.btnAddDegree.UseVisualStyleBackColor = true;
@@ -55,53 +56,57 @@
             // lblEmployeeDegree
             // 
             this.lblEmployeeDegree.AutoSize = true;
-            this.lblEmployeeDegree.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeDegree.Location = new System.Drawing.Point(98, 176);
+            this.lblEmployeeDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeDegree.Location = new System.Drawing.Point(172, 258);
             this.lblEmployeeDegree.Name = "lblEmployeeDegree";
-            this.lblEmployeeDegree.Size = new System.Drawing.Size(160, 26);
+            this.lblEmployeeDegree.Size = new System.Drawing.Size(183, 25);
             this.lblEmployeeDegree.TabIndex = 18;
             this.lblEmployeeDegree.Text = "Employee Degree";
             // 
             // txtEmployeeLast
             // 
-            this.txtEmployeeLast.Location = new System.Drawing.Point(264, 145);
+            this.txtEmployeeLast.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeLast.Location = new System.Drawing.Point(361, 185);
             this.txtEmployeeLast.Name = "txtEmployeeLast";
-            this.txtEmployeeLast.Size = new System.Drawing.Size(253, 20);
+            this.txtEmployeeLast.Size = new System.Drawing.Size(413, 31);
             this.txtEmployeeLast.TabIndex = 17;
             // 
             // lblEmpLsetName
             // 
             this.lblEmpLsetName.AutoSize = true;
-            this.lblEmpLsetName.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpLsetName.Location = new System.Drawing.Point(54, 139);
+            this.lblEmpLsetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpLsetName.Location = new System.Drawing.Point(124, 188);
             this.lblEmpLsetName.Name = "lblEmpLsetName";
-            this.lblEmpLsetName.Size = new System.Drawing.Size(204, 26);
+            this.lblEmpLsetName.Size = new System.Drawing.Size(231, 25);
             this.lblEmpLsetName.TabIndex = 16;
             this.lblEmpLsetName.Text = "Employee\'s Last Name";
             // 
             // txtEmployeeName
             // 
-            this.txtEmployeeName.Location = new System.Drawing.Point(264, 115);
+            this.txtEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeName.Location = new System.Drawing.Point(361, 133);
             this.txtEmployeeName.Name = "txtEmployeeName";
-            this.txtEmployeeName.Size = new System.Drawing.Size(253, 20);
+            this.txtEmployeeName.Size = new System.Drawing.Size(413, 31);
             this.txtEmployeeName.TabIndex = 15;
             // 
             // lblEmpName
             // 
             this.lblEmpName.AutoSize = true;
-            this.lblEmpName.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpName.Location = new System.Drawing.Point(106, 109);
+            this.lblEmpName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpName.Location = new System.Drawing.Point(186, 136);
             this.lblEmpName.Name = "lblEmpName";
-            this.lblEmpName.Size = new System.Drawing.Size(152, 26);
+            this.lblEmpName.Size = new System.Drawing.Size(169, 25);
             this.lblEmpName.TabIndex = 14;
             this.lblEmpName.Text = "Employee Name";
             // 
             // lstAddDegree
             // 
+            this.lstAddDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstAddDegree.FormattingEnabled = true;
-            this.lstAddDegree.Location = new System.Drawing.Point(279, 178);
+            this.lstAddDegree.ItemHeight = 25;
+            this.lstAddDegree.Location = new System.Drawing.Point(361, 245);
             this.lstAddDegree.Name = "lstAddDegree";
-            this.lstAddDegree.Size = new System.Drawing.Size(175, 56);
+            this.lstAddDegree.Size = new System.Drawing.Size(335, 129);
             this.lstAddDegree.TabIndex = 13;
             this.lstAddDegree.Click += new System.EventHandler(this.lstAddDegree_Click);
             // 
@@ -118,22 +123,24 @@
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.comboBox1.Items.AddRange(new object[] {
             "a ->z",
             "z ->a"});
-            this.comboBox1.Location = new System.Drawing.Point(375, 236);
+            this.comboBox1.Location = new System.Drawing.Point(545, 381);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(71, 21);
+            this.comboBox1.Size = new System.Drawing.Size(141, 33);
             this.comboBox1.TabIndex = 25;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(231, 276);
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Location = new System.Drawing.Point(297, 449);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(119, 23);
+            this.btnSubmit.Size = new System.Drawing.Size(503, 37);
             this.btnSubmit.TabIndex = 26;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -142,18 +149,19 @@
             // txtEmployeeNo
             // 
             this.txtEmployeeNo.Enabled = false;
-            this.txtEmployeeNo.Location = new System.Drawing.Point(264, 84);
+            this.txtEmployeeNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeNo.Location = new System.Drawing.Point(361, 83);
             this.txtEmployeeNo.Name = "txtEmployeeNo";
-            this.txtEmployeeNo.Size = new System.Drawing.Size(128, 20);
+            this.txtEmployeeNo.Size = new System.Drawing.Size(256, 31);
             this.txtEmployeeNo.TabIndex = 28;
             // 
             // lblEmployeeNo
             // 
             this.lblEmployeeNo.AutoSize = true;
-            this.lblEmployeeNo.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeNo.Location = new System.Drawing.Point(106, 78);
+            this.lblEmployeeNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeNo.Location = new System.Drawing.Point(215, 86);
             this.lblEmployeeNo.Name = "lblEmployeeNo";
-            this.lblEmployeeNo.Size = new System.Drawing.Size(127, 26);
+            this.lblEmployeeNo.Size = new System.Drawing.Size(140, 25);
             this.lblEmployeeNo.TabIndex = 27;
             this.lblEmployeeNo.Text = "Employee No";
             // 
@@ -162,7 +170,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(564, 311);
+            this.ClientSize = new System.Drawing.Size(1081, 513);
             this.Controls.Add(this.txtEmployeeNo);
             this.Controls.Add(this.lblEmployeeNo);
             this.Controls.Add(this.btnSubmit);
