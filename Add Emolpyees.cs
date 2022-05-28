@@ -7,7 +7,6 @@ namespace HR_Manager_AD0667
     public partial class frmAddEmolpyees : Form
     {
         private int StudentCounter = 0;
-        private List<DBEmployee> Employees = new List<DBEmployee>();
 
         // list to hold all the degree
         static List<string> addDegree = new List<string>();
@@ -81,14 +80,6 @@ namespace HR_Manager_AD0667
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            DBEmployee newEmployee = new DBEmployee();
-            newEmployee.EmpId = txtEmployeeNo.Text;
-            newEmployee.EmpName = txtEmployeeName.Text;
-            newEmployee.EmpNameLast = txtEmployeeLast.Text;
-
-            MessageBox.Show("Employee added successflly \n" + 
-                newEmployee.EmployeeReport());
-            Employees.Add(newEmployee);
             ClearScreen();
         }
         private void ClearScreen()

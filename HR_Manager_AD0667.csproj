@@ -78,7 +78,6 @@
       <DependentUpon>Add degree.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="DBEmployee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Add Emolpyees.resx">
       <DependentUpon>Add Emolpyees.cs</DependentUpon>
