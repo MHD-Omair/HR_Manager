@@ -20,7 +20,6 @@ namespace HR_Manager_AD0667
             AddDegreeBindingSource.DataSource = addDegree;
             lstAddDegree.DataSource = AddDegreeBindingSource;
         }
-
         private void btnAddDegree_Click(object sender, EventArgs e)
         {
             frmAddDegree frmAddDegree = new frmAddDegree();
@@ -34,13 +33,10 @@ namespace HR_Manager_AD0667
             AddDegreeBindingSource.ResetBindings(false);
             MessageBox.Show("iteat " + addDegree.Count);
         }
-
         private void frmNavigation_Activated(object sender, EventArgs e)
         {
             AddDegreeBindingSource.ResetBindings(true);
         }
-
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedItem.ToString() == "a->z")
@@ -55,8 +51,6 @@ namespace HR_Manager_AD0667
                 AddDegreeBindingSource.ResetBindings(false);
             }
         }
-
-
         private void lstAddDegree_Click(object sender, EventArgs e)
         {
             ListBox listBox = (ListBox)sender;
