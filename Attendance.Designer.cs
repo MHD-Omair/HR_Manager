@@ -70,18 +70,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(179, 132);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 26);
+            this.textBox1.Size = new System.Drawing.Size(227, 22);
             this.textBox1.TabIndex = 27;
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(179, 183);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(179, 185);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(227, 26);
+            this.textBox3.Size = new System.Drawing.Size(227, 22);
             this.textBox3.TabIndex = 29;
             // 
             // lblEmployeeName
@@ -131,7 +131,7 @@
             // 
             this.lblCertificate.AutoSize = true;
             this.lblCertificate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCertificate.Location = new System.Drawing.Point(64, 293);
+            this.lblCertificate.Location = new System.Drawing.Point(64, 284);
             this.lblCertificate.Name = "lblCertificate";
             this.lblCertificate.Size = new System.Drawing.Size(109, 25);
             this.lblCertificate.TabIndex = 34;
@@ -157,7 +157,7 @@
             "Bachelor",
             "Master",
             "PhD"});
-            this.lstCertificate.Location = new System.Drawing.Point(179, 284);
+            this.lstCertificate.Location = new System.Drawing.Point(179, 274);
             this.lstCertificate.Name = "lstCertificate";
             this.lstCertificate.Size = new System.Drawing.Size(227, 68);
             this.lstCertificate.TabIndex = 32;
