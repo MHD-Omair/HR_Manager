@@ -17,7 +17,6 @@ namespace HR_Manager_AD0667
         public frmAddEmolpyees()
         {
             InitializeComponent();
-
             AddDegreeBindingSource.DataSource = addDegree;
             lstCertificate.DataSource = AddDegreeBindingSource;
         }

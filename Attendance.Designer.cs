@@ -30,6 +30,18 @@
         {
             this.lblAttendance = new System.Windows.Forms.Label();
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblEmployeeName = new System.Windows.Forms.Label();
+            this.lblEmployeeId = new System.Windows.Forms.Label();
+            this.dtpEmployeeDOB = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblCertificate = new System.Windows.Forms.Label();
+            this.lblDayOfBirthday = new System.Windows.Forms.Label();
+            this.lstCertificate = new System.Windows.Forms.ListBox();
+            this.btnAddEmployee = new System.Windows.Forms.Button();
+            this.btnUpdata = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,7 +49,7 @@
             // 
             this.lblAttendance.AutoSize = true;
             this.lblAttendance.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAttendance.Location = new System.Drawing.Point(12, 9);
+            this.lblAttendance.Location = new System.Drawing.Point(12, 28);
             this.lblAttendance.Name = "lblAttendance";
             this.lblAttendance.Size = new System.Drawing.Size(194, 36);
             this.lblAttendance.TabIndex = 25;
@@ -49,19 +61,155 @@
             this.dgvAttendance.AllowUserToDeleteRows = false;
             this.dgvAttendance.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAttendance.Location = new System.Drawing.Point(12, 203);
+            this.dgvAttendance.Location = new System.Drawing.Point(481, 163);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvAttendance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAttendance.Size = new System.Drawing.Size(540, 228);
+            this.dgvAttendance.Size = new System.Drawing.Size(549, 289);
             this.dgvAttendance.TabIndex = 26;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(179, 132);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(227, 26);
+            this.textBox1.TabIndex = 27;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(179, 183);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(227, 26);
+            this.textBox3.TabIndex = 29;
+            // 
+            // lblEmployeeName
+            // 
+            this.lblEmployeeName.AutoSize = true;
+            this.lblEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.lblEmployeeName.Location = new System.Drawing.Point(49, 182);
+            this.lblEmployeeName.Name = "lblEmployeeName";
+            this.lblEmployeeName.Size = new System.Drawing.Size(121, 25);
+            this.lblEmployeeName.TabIndex = 30;
+            this.lblEmployeeName.Text = "Attendance";
+            // 
+            // lblEmployeeId
+            // 
+            this.lblEmployeeId.AutoSize = true;
+            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.lblEmployeeId.Location = new System.Drawing.Point(37, 133);
+            this.lblEmployeeId.Name = "lblEmployeeId";
+            this.lblEmployeeId.Size = new System.Drawing.Size(133, 25);
+            this.lblEmployeeId.TabIndex = 31;
+            this.lblEmployeeId.Text = "Employee ID";
+            // 
+            // dtpEmployeeDOB
+            // 
+            this.dtpEmployeeDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEmployeeDOB.Location = new System.Drawing.Point(179, 229);
+            this.dtpEmployeeDOB.Name = "dtpEmployeeDOB";
+            this.dtpEmployeeDOB.Size = new System.Drawing.Size(227, 22);
+            this.dtpEmployeeDOB.TabIndex = 37;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.comboBox1.Items.AddRange(new object[] {
+            "a->z",
+            "z ->a"});
+            this.comboBox1.Location = new System.Drawing.Point(315, 358);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(91, 23);
+            this.comboBox1.TabIndex = 36;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // lblCertificate
+            // 
+            this.lblCertificate.AutoSize = true;
+            this.lblCertificate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCertificate.Location = new System.Drawing.Point(64, 293);
+            this.lblCertificate.Name = "lblCertificate";
+            this.lblCertificate.Size = new System.Drawing.Size(109, 25);
+            this.lblCertificate.TabIndex = 34;
+            this.lblCertificate.Text = "Certificate";
+            // 
+            // lblDayOfBirthday
+            // 
+            this.lblDayOfBirthday.AutoSize = true;
+            this.lblDayOfBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDayOfBirthday.Location = new System.Drawing.Point(10, 230);
+            this.lblDayOfBirthday.Name = "lblDayOfBirthday";
+            this.lblDayOfBirthday.Size = new System.Drawing.Size(163, 25);
+            this.lblDayOfBirthday.TabIndex = 33;
+            this.lblDayOfBirthday.Text = "Day Of Birthday";
+            // 
+            // lstCertificate
+            // 
+            this.lstCertificate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstCertificate.FormattingEnabled = true;
+            this.lstCertificate.ItemHeight = 16;
+            this.lstCertificate.Items.AddRange(new object[] {
+            "Tawjihi",
+            "Bachelor",
+            "Master",
+            "PhD"});
+            this.lstCertificate.Location = new System.Drawing.Point(179, 284);
+            this.lstCertificate.Name = "lstCertificate";
+            this.lstCertificate.Size = new System.Drawing.Size(227, 68);
+            this.lstCertificate.TabIndex = 32;
+            // 
+            // btnAddEmployee
+            // 
+            this.btnAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEmployee.Location = new System.Drawing.Point(42, 429);
+            this.btnAddEmployee.Name = "btnAddEmployee";
+            this.btnAddEmployee.Size = new System.Drawing.Size(126, 34);
+            this.btnAddEmployee.TabIndex = 38;
+            this.btnAddEmployee.Text = "Add Employee";
+            this.btnAddEmployee.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdata
+            // 
+            this.btnUpdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdata.Location = new System.Drawing.Point(174, 429);
+            this.btnUpdata.Name = "btnUpdata";
+            this.btnUpdata.Size = new System.Drawing.Size(126, 34);
+            this.btnUpdata.TabIndex = 39;
+            this.btnUpdata.Text = "Updata";
+            this.btnUpdata.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(306, 429);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(126, 34);
+            this.btnDelete.TabIndex = 40;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // frmAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(636, 443);
+            this.ClientSize = new System.Drawing.Size(1081, 513);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdata);
+            this.Controls.Add(this.btnAddEmployee);
+            this.Controls.Add(this.dtpEmployeeDOB);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblCertificate);
+            this.Controls.Add(this.lblDayOfBirthday);
+            this.Controls.Add(this.lstCertificate);
+            this.Controls.Add(this.lblEmployeeId);
+            this.Controls.Add(this.lblEmployeeName);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvAttendance);
             this.Controls.Add(this.lblAttendance);
             this.Name = "frmAttendance";
@@ -77,5 +225,17 @@
 
         private System.Windows.Forms.Label lblAttendance;
         private System.Windows.Forms.DataGridView dgvAttendance;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblEmployeeName;
+        private System.Windows.Forms.Label lblEmployeeId;
+        private System.Windows.Forms.DateTimePicker dtpEmployeeDOB;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblCertificate;
+        public System.Windows.Forms.Label lblDayOfBirthday;
+        private System.Windows.Forms.ListBox lstCertificate;
+        private System.Windows.Forms.Button btnAddEmployee;
+        private System.Windows.Forms.Button btnUpdata;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
