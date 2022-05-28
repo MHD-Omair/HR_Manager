@@ -30,7 +30,7 @@ namespace HR_Manager_AD0667
         {
             addDegree.Add(degree);
             AddDegreeBindingSource.ResetBindings(false);
-            MessageBox.Show("iteat " + addDegree.Count);
+           // MessageBox.Show("iteat " + addDegree.Count);
         }
         private void frmNavigation_Activated(object sender, EventArgs e)
         {
@@ -52,7 +52,7 @@ namespace HR_Manager_AD0667
         }
         private void lstAddDegree_Click(object sender, EventArgs e)
         {
-            ListBox listBox = (ListBox)sender;
+           /* ListBox listBox = (ListBox)sender;
             int i = lstCertificate.SelectedIndex;
             if (i >= 0)
             {
@@ -64,7 +64,7 @@ namespace HR_Manager_AD0667
                     addDegree.RemoveAt(listBox.SelectedIndex);
                     AddDegreeBindingSource.ResetBindings(false);
                 }
-            }
+            }  */
         }
 
         private void frmNavigation_Load(object sender, EventArgs e)
@@ -83,9 +83,11 @@ namespace HR_Manager_AD0667
             Employee employee = new Employee();
             employee.EmpId = txtEmployeeDi.Text;
             employee.Name = txtEmployeeName.Text;
-            employee.
+            employee.DateOfBirth = dtpEmployeeDOB.Value;
+            employee.Certificate = lstCertificate.SelectedIndex.ToString();
 
-            ClearScreen();
+            MessageBox.Show("Employee added successfully \n"
+                + employee.EmployeeReport());
         }
         private void ClearScreen()
         {

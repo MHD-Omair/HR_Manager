@@ -24,5 +24,12 @@ namespace HR_Manager_AD0667
         {
 
         }
+        public string EmployeeReport()
+        {
+            string report = "Employee ID : " + EmpId + "\nEmployee : " + Name + "\nEmployee DOB : " 
+                + DateOfBirth.ToShortDateString() + "\nEmployee Certificate : " + Certificate;
+
+            return report;
+        }
     }
 }

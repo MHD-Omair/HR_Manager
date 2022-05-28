@@ -30,8 +30,8 @@ namespace HR_Manager_AD0667
                 frmNavigation.FormBorderStyle = FormBorderStyle.None;
                 pnlToNavi.Controls.Add(frmNavigation);
                 frmNavigation.Show();
-
-                frmNavigation.instance.lblPUN.Text = "Welcome " + txtUsername.Text;
+           
+            frmNavigation.instance.lblPUN.Text = "Welcome " + txtUsername.Text;
          //   }
          //   else
          //       MessageBox.Show("The Username or Password you entered is incorrect," 

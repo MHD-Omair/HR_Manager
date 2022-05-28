@@ -20,6 +20,7 @@ namespace HR_Manager_AD0667
         public frmNavigation()
         {
             InitializeComponent();
+
             instance = this;
             lblPUN = lblPUserName;
         }
