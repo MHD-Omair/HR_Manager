@@ -159,7 +159,7 @@
             // 
             this.pnlDisplayForms.Location = new System.Drawing.Point(175, 97);
             this.pnlDisplayForms.Name = "pnlDisplayForms";
-            this.pnlDisplayForms.Size = new System.Drawing.Size(680, 410);
+            this.pnlDisplayForms.Size = new System.Drawing.Size(1097, 552);
             this.pnlDisplayForms.TabIndex = 16;
             // 
             // frmNavigation
@@ -167,7 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(869, 516);
+            this.ClientSize = new System.Drawing.Size(1284, 661);
             this.Controls.Add(this.lblTimesOfWork);
             this.Controls.Add(this.lblAccounts);
             this.Controls.Add(this.lblhumanAffairs);
