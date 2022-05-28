@@ -40,6 +40,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlToNavi = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlToNavi.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -48,7 +49,7 @@
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnLogin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(537, 347);
+            this.btnLogin.Location = new System.Drawing.Point(565, 357);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(135, 27);
             this.btnLogin.TabIndex = 0;
@@ -60,7 +61,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(440, 231);
+            this.lblUsername.Location = new System.Drawing.Point(468, 241);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(125, 32);
             this.lblUsername.TabIndex = 1;
@@ -68,7 +69,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(571, 242);
+            this.txtUserName.Location = new System.Drawing.Point(599, 252);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(201, 20);
             this.txtUserName.TabIndex = 3;
@@ -76,7 +77,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(571, 291);
+            this.txtPassword.Location = new System.Drawing.Point(599, 301);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(201, 20);
@@ -87,7 +88,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(447, 283);
+            this.lblPassword.Location = new System.Drawing.Point(475, 293);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(118, 32);
             this.lblPassword.TabIndex = 6;
@@ -96,7 +97,7 @@
             // lblUNBar
             // 
             this.lblUNBar.AutoSize = true;
-            this.lblUNBar.Location = new System.Drawing.Point(755, 245);
+            this.lblUNBar.Location = new System.Drawing.Point(783, 255);
             this.lblUNBar.Name = "lblUNBar";
             this.lblUNBar.Size = new System.Drawing.Size(13, 13);
             this.lblUNBar.TabIndex = 7;
@@ -106,7 +107,7 @@
             // lblPWBar
             // 
             this.lblPWBar.AutoSize = true;
-            this.lblPWBar.Location = new System.Drawing.Point(754, 294);
+            this.lblPWBar.Location = new System.Drawing.Point(782, 304);
             this.lblPWBar.Name = "lblPWBar";
             this.lblPWBar.Size = new System.Drawing.Size(13, 13);
             this.lblPWBar.TabIndex = 8;
@@ -117,7 +118,7 @@
             // 
             this.lblHRManeger.AutoSize = true;
             this.lblHRManeger.Font = new System.Drawing.Font("Lucida Calligraphy", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHRManeger.Location = new System.Drawing.Point(147, 47);
+            this.lblHRManeger.Location = new System.Drawing.Point(176, 50);
             this.lblHRManeger.Name = "lblHRManeger";
             this.lblHRManeger.Size = new System.Drawing.Size(504, 83);
             this.lblHRManeger.TabIndex = 9;
@@ -126,19 +127,21 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 142);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 149);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(429, 286);
+            this.pictureBox1.Size = new System.Drawing.Size(536, 339);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // pnlToNavi
             // 
+            this.pnlToNavi.Controls.Add(this.pictureBox1);
+            this.pnlToNavi.Controls.Add(this.lblHRManeger);
             this.pnlToNavi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlToNavi.Location = new System.Drawing.Point(0, 0);
             this.pnlToNavi.Name = "pnlToNavi";
-            this.pnlToNavi.Size = new System.Drawing.Size(804, 481);
+            this.pnlToNavi.Size = new System.Drawing.Size(869, 516);
             this.pnlToNavi.TabIndex = 10;
             // 
             // frmHRManager
@@ -146,13 +149,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(804, 481);
+            this.ClientSize = new System.Drawing.Size(869, 516);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.lblHRManeger);
             this.Controls.Add(this.lblPWBar);
             this.Controls.Add(this.lblUNBar);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.btnLogin);
@@ -161,6 +162,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlToNavi.ResumeLayout(false);
+            this.pnlToNavi.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
