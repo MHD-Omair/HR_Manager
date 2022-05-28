@@ -60,6 +60,7 @@
       <DependentUpon>Attendance.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeDAL.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
