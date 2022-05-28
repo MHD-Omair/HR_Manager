@@ -43,7 +43,7 @@ namespace HR_Manager_AD0667
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem.ToString() == "A->Z")
+            if (comboBox1.SelectedItem.ToString() == "a->z")
             {
                 addDegree.Sort();
                 AddDegreeBindingSource.ResetBindings(false);

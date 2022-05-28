@@ -129,7 +129,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.comboBox1.Items.AddRange(new object[] {
-            "a ->z",
+            "a->z",
             "z ->a"});
             this.comboBox1.Location = new System.Drawing.Point(545, 381);
             this.comboBox1.Name = "comboBox1";
