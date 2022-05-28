@@ -35,7 +35,6 @@ namespace HR_Manager_AD0667
         }
         private void frmNavigation_Activated(object sender, EventArgs e)
         {
-            AddDegreeBindingSource.ResetBindings(true);
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
