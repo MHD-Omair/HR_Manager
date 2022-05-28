@@ -19,10 +19,10 @@ namespace HR_Manager_AD0667
         }
         public Employee(string empId, string name, DateTime dateTime, string certificate)
         {
-            EmpId = empId;
-            Name = name;
-            DateOfBirth = dateTime;
-            Certificate = certificate;
+            this.EmpId = empId;
+            this.Name = name;
+            this.DateOfBirth = dateTime;
+            this.Certificate = certificate;
         }
         public string EmployeeReport()
         {
