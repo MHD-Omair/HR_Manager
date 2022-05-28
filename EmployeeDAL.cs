@@ -25,49 +25,5 @@ namespace HR_Manager_AD0667
 
             return EmployeeTable;
         }
-        public static Employee GetEmployee(int id)
-        {
-            return null;
-        }
-        public static Employee GetEmlpoyeeById(int id)
-        {
-            Employee employee = new Employee();
-            string commandString = string.Format(
-                "Select * from Employee where EmlpoyeeID = {0}", id);
-            OleDbCommand command = new OleDbCommand(commandString, connection);
-            OleDbDataReader employeeReader = command.ExecuteReader();
-            if (employeeReader.Read())
-            {
-                while(employeeReader.Read())
-                {
-                    employee.EmpId = employeeReader.GetInt32(0);
-                    employee.Name = employeeReader.GetString(1);
-                }    
-            }
-            connection.Close();
-            return employee;
-        }
-        public static void CreatEmployee(Employee employee)
-        {
-            string commandString = string.Format(
-            "Insert into Employee (EmployeeName) Values('{0}')",employee.Name);
-            OleDbCommand command = new OleDbCommand(connectionString, connection);
-
-            connection.Close();           
-            connection.Open();
-            command.ExecuteNonQuery();
-            connection.Close();
-        }
-        public static void UpdateEmployee(Employee employee)
-        {
-            string commandString = string.Format(
-                        "Update into Employee (EmployeeName) Values('{0}')", employee.Name);
-            OleDbCommand command = new OleDbCommand(connectionString, connection);
-
-            connection.Close();
-            connection.Open();
-            command.ExecuteNonQuery();
-            connection.Close();
-        }
     }
 }
