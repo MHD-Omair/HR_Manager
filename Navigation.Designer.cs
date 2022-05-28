@@ -46,7 +46,7 @@
             // 
             this.lblTimesOfWork.AutoSize = true;
             this.lblTimesOfWork.Font = new System.Drawing.Font("Lucida Calligraphy", 9F);
-            this.lblTimesOfWork.Location = new System.Drawing.Point(50, 297);
+            this.lblTimesOfWork.Location = new System.Drawing.Point(36, 283);
             this.lblTimesOfWork.Name = "lblTimesOfWork";
             this.lblTimesOfWork.Size = new System.Drawing.Size(103, 16);
             this.lblTimesOfWork.TabIndex = 15;
@@ -56,7 +56,7 @@
             // 
             this.lblAccounts.AutoSize = true;
             this.lblAccounts.Font = new System.Drawing.Font("Lucida Calligraphy", 9F);
-            this.lblAccounts.Location = new System.Drawing.Point(68, 215);
+            this.lblAccounts.Location = new System.Drawing.Point(54, 201);
             this.lblAccounts.Name = "lblAccounts";
             this.lblAccounts.Size = new System.Drawing.Size(67, 16);
             this.lblAccounts.TabIndex = 14;
@@ -66,7 +66,7 @@
             // 
             this.lblhumanAffairs.AutoSize = true;
             this.lblhumanAffairs.Font = new System.Drawing.Font("Lucida Calligraphy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhumanAffairs.Location = new System.Drawing.Point(48, 126);
+            this.lblhumanAffairs.Location = new System.Drawing.Point(34, 112);
             this.lblhumanAffairs.Name = "lblhumanAffairs";
             this.lblhumanAffairs.Size = new System.Drawing.Size(107, 16);
             this.lblhumanAffairs.TabIndex = 13;
@@ -75,7 +75,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(37, 342);
+            this.button2.Location = new System.Drawing.Point(23, 328);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 23);
             this.button2.TabIndex = 12;
@@ -85,7 +85,7 @@
             // btnHRReports
             // 
             this.btnHRReports.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHRReports.Location = new System.Drawing.Point(37, 313);
+            this.btnHRReports.Location = new System.Drawing.Point(23, 299);
             this.btnHRReports.Name = "btnHRReports";
             this.btnHRReports.Size = new System.Drawing.Size(127, 23);
             this.btnHRReports.TabIndex = 11;
@@ -95,7 +95,7 @@
             // btnAccountSettings
             // 
             this.btnAccountSettings.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccountSettings.Location = new System.Drawing.Point(37, 260);
+            this.btnAccountSettings.Location = new System.Drawing.Point(23, 246);
             this.btnAccountSettings.Name = "btnAccountSettings";
             this.btnAccountSettings.Size = new System.Drawing.Size(127, 23);
             this.btnAccountSettings.TabIndex = 10;
@@ -105,7 +105,7 @@
             // btnStaffAccounts
             // 
             this.btnStaffAccounts.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaffAccounts.Location = new System.Drawing.Point(37, 231);
+            this.btnStaffAccounts.Location = new System.Drawing.Point(23, 217);
             this.btnStaffAccounts.Name = "btnStaffAccounts";
             this.btnStaffAccounts.Size = new System.Drawing.Size(127, 23);
             this.btnStaffAccounts.TabIndex = 9;
@@ -115,7 +115,7 @@
             // btnAttendance
             // 
             this.btnAttendance.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAttendance.Location = new System.Drawing.Point(37, 171);
+            this.btnAttendance.Location = new System.Drawing.Point(23, 157);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(127, 23);
             this.btnAttendance.TabIndex = 8;
@@ -126,7 +126,7 @@
             // btnDepartmentofHR
             // 
             this.btnDepartmentofHR.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepartmentofHR.Location = new System.Drawing.Point(37, 142);
+            this.btnDepartmentofHR.Location = new System.Drawing.Point(23, 128);
             this.btnDepartmentofHR.Name = "btnDepartmentofHR";
             this.btnDepartmentofHR.Size = new System.Drawing.Size(127, 23);
             this.btnDepartmentofHR.TabIndex = 7;
@@ -139,7 +139,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 111);
+            this.label1.Location = new System.Drawing.Point(10, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 292);
             this.label1.TabIndex = 6;
@@ -157,9 +157,9 @@
             // 
             // pnlDisplayForms
             // 
-            this.pnlDisplayForms.Location = new System.Drawing.Point(181, 110);
+            this.pnlDisplayForms.Location = new System.Drawing.Point(175, 97);
             this.pnlDisplayForms.Name = "pnlDisplayForms";
-            this.pnlDisplayForms.Size = new System.Drawing.Size(611, 350);
+            this.pnlDisplayForms.Size = new System.Drawing.Size(680, 410);
             this.pnlDisplayForms.TabIndex = 16;
             // 
             // frmNavigation
@@ -167,7 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(804, 481);
+            this.ClientSize = new System.Drawing.Size(869, 516);
             this.Controls.Add(this.lblTimesOfWork);
             this.Controls.Add(this.lblAccounts);
             this.Controls.Add(this.lblhumanAffairs);
