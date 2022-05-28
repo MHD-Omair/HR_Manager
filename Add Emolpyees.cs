@@ -8,6 +8,8 @@ namespace HR_Manager_AD0667
     {
         private int StudentCounter = 0;
 
+        private List<Employee> employees = new List<Employee>();
+
         // list to hold all the degree
         static List<string> addDegree = new List<string>();
         BindingSource AddDegreeBindingSource = new BindingSource();
@@ -50,7 +52,7 @@ namespace HR_Manager_AD0667
                 AddDegreeBindingSource.ResetBindings(false);
             }
         }
-        private void lstAddDegree_Click(object sender, EventArgs e)
+      /*  private void lstAddDegree_Click(object sender, EventArgs e)
         {
            /* ListBox listBox = (ListBox)sender;
             int i = lstCertificate.SelectedIndex;
@@ -64,8 +66,8 @@ namespace HR_Manager_AD0667
                     addDegree.RemoveAt(listBox.SelectedIndex);
                     AddDegreeBindingSource.ResetBindings(false);
                 }
-            }  */
-        }
+            }  
+        }*/
 
         private void frmNavigation_Load(object sender, EventArgs e)
         {
@@ -75,7 +77,7 @@ namespace HR_Manager_AD0667
             lstCertificate.DataSource = AddDegreeBindingSource;
 
             StudentCounter++;
-            txtEmployeeDi.Text = "EMP_" + StudentCounter;
+            txtEmployeeDi.Text = "EMP2022_" + StudentCounter;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -84,16 +86,17 @@ namespace HR_Manager_AD0667
             employee.EmpId = txtEmployeeDi.Text;
             employee.Name = txtEmployeeName.Text;
             employee.DateOfBirth = dtpEmployeeDOB.Value;
-            employee.Certificate = lstCertificate.SelectedIndex.ToString();
+            employee.Certificate = lstCertificate.SelectedItem.ToString();
 
-            MessageBox.Show("Employee added successfully \n"
-                + employee.EmployeeReport());
+            MessageBox.Show("Employee added successfully \n" + employee.EmployeeReport());
+            ClearScreen();
         }
         private void ClearScreen()
         {
             StudentCounter++;
-            txtEmployeeDi.Text = "EMP_" + StudentCounter;
+            txtEmployeeDi.Text = "EMP2022_" + StudentCounter;
             txtEmployeeName.Text = string.Empty;
+            dtpEmployeeDOB.Value = DateTime.Now;
             lstCertificate.SelectedIndex = 0;
             txtEmployeeName.Focus();
         }

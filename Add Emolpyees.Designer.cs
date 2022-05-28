@@ -94,7 +94,6 @@
             this.lstCertificate.Name = "lstCertificate";
             this.lstCertificate.Size = new System.Drawing.Size(335, 104);
             this.lstCertificate.TabIndex = 13;
-            this.lstCertificate.Click += new System.EventHandler(this.lstAddDegree_Click);
             // 
             // lblAddEmployee
             // 
