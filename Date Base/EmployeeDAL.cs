@@ -22,11 +22,11 @@ namespace HR_Manager_AD0667
 
             OleDbDataAdapter da = new OleDbDataAdapter(command);
 
-            DataTable EmployeesTable = new DataTable();
+            DataTable employeesTable = new DataTable();
 
-            da.Fill(EmployeesTable);
+            da.Fill(employeesTable);
 
-            return EmployeesTable;
+            return employeesTable;
         }
         public static Employee GetEmployeeById(int id)
         {
