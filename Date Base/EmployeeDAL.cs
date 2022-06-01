@@ -10,7 +10,7 @@ namespace HR_Manager_AD0667
 {
     public static class EmployeeDAL
     {
-        private static string connectionString = "Provideer=Microsoft.ACE.OLEDB.12.0;" +
+        private static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;" +
         "Data Source=C:\\Users\\mhdom\\OneDrive\\Desktop\\UI\\برمجة مرئية\\HR_Manager_AD0667-master\\DataBase";
 
         public static OleDbConnection connection = new OleDbConnection(connectionString);
@@ -31,12 +31,12 @@ namespace HR_Manager_AD0667
         public static Employee GetEmployeeById(int id)
         {
             Employee employee = new Employee();
-            string commandString = string.Format("Select * from Employee where EmployeeId = {0}", id);
+            string commandString = string.Format("Select * from Employees where EmployeeId = {0}", id);
 
             OleDbCommand command = new OleDbCommand(commandString, connection);
             connection.Open();
             OleDbDataReader EmployeeReader = command.ExecuteReader();
-            if (EmployeeReader.HasRows)
+          /* if (EmployeeReader.HasRows)
             {
                 while (EmployeeReader.Read())
                 {
@@ -45,7 +45,7 @@ namespace HR_Manager_AD0667
                 }
             }
             connection.Close();
-            return Employee;
+            return Employee;*/
         }
         /*public static void CreateEmployee(Employee employee)
         {
