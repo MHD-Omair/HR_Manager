@@ -8,7 +8,7 @@ namespace HR_Manager_AD0667
     {
         private int StudentCounter = 0;
 
-        private List<Employee> employees = new List<Employee>();
+        private List<employee> employees = new List<employee>();
 
         // list to hold all the degree
         static List<string> addDegree = new List<string>();
@@ -77,7 +77,7 @@ namespace HR_Manager_AD0667
         }
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            Employee newEmployee = new Employee();
+            employee newEmployee = new employee();
             newEmployee.EmpId = txtEmployeeDi.Text;
             newEmployee.Name = txtEmployeeName.Text;
            // newEmployee.DateOfBirth = dtpEmployeeDOB.Value;

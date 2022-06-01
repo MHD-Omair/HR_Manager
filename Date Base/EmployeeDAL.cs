@@ -29,24 +29,24 @@ namespace HR_Manager_AD0667
 
             return employeesTable;
         }
-        public static Employee GetEmployeeById(int id)
+        public static employee GetEmployeeById(int id)
         {
-            Employee employee = new Employee();
+            employee employee = new employee();
             string commandString = string.Format("Select * from Employees where EmployeeId = {0}", id);
 
             OleDbCommand command = new OleDbCommand(commandString, connection);
             connection.Open();
-            OleDbDataReader EmployeeReader = command.ExecuteReader();
-          /* if (EmployeeReader.HasRows)
+            OleDbDataReader employeeReader = command.ExecuteReader();
+           if (employeeReader.HasRows)
             {
-                while (EmployeeReader.Read())
+                while (employeeReader.Read())
                 {
-                    Employee.EmployeeId = EmployeeReader.GetInt32(0);
-                    Employee.EmployeeName = EmployeeReader.GetString(1);
+                    employee.EmployeeId = employeeReader.GetInt32(0);
+                    employee.EmployeeName = employeeReader.GetString(1);
                 }
             }
             connection.Close();
-            return Employee;*/
+            return employee;
         }
         /*public static void CreateEmployee(Employee employee)
         {
