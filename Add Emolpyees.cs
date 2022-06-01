@@ -24,7 +24,6 @@ namespace HR_Manager_AD0667
         {
             frmAddDegree frmAddDegree = new frmAddDegree();
             frmAddDegree.ShowDialog();
-
             this.Show();
         }
         internal void receiveData(string degree)
@@ -73,20 +72,17 @@ namespace HR_Manager_AD0667
             AddDegreeBindingSource.DataSource = addDegree;
             // set the binding to the listbox
             lstCertificate.DataSource = AddDegreeBindingSource;
-
             StudentCounter++;
             txtEmployeeDi.Text = "EMP2022_" + StudentCounter;
         }
-
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             Employee newEmployee = new Employee();
             newEmployee.EmpId = txtEmployeeDi.Text;
             newEmployee.Name = txtEmployeeName.Text;
-            newEmployee.DateOfBirth = dtpEmployeeDOB.Value;
-            newEmployee.Certificate = lstCertificate.SelectedItem.ToString();
-
-            MessageBox.Show("Employee added successfully \n" + newEmployee.EmployeeReport());
+           // newEmployee.DateOfBirth = dtpEmployeeDOB.Value;
+           // newEmployee.Certificate = lstCertificate.SelectedItem.ToString();
+           // MessageBox.Show("Employee added successfully \n" + newEmployee.EmployeeReport());
             employees.Add(newEmployee);
             ClearScreen();
         }
