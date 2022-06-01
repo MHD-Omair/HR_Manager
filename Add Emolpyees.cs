@@ -49,9 +49,9 @@ namespace HR_Manager_AD0667
                 AddDegreeBindingSource.ResetBindings(false);
             }
         }
-      /*  private void lstAddDegree_Click(object sender, EventArgs e)
+        private void lstAddDegree_Click(object sender, EventArgs e)
         {
-           /* ListBox listBox = (ListBox)sender;
+            ListBox listBox = (ListBox)sender;
             int i = lstCertificate.SelectedIndex;
             if (i >= 0)
             {
@@ -64,7 +64,7 @@ namespace HR_Manager_AD0667
                     AddDegreeBindingSource.ResetBindings(false);
                 }
             }  
-        }*/
+        }
 
         private void frmNavigation_Load(object sender, EventArgs e)
         {
@@ -78,8 +78,8 @@ namespace HR_Manager_AD0667
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             Employee newEmployee = new Employee();
-            newEmployee.EmpId = txtEmployeeDi.Text;
-            newEmployee.Name = txtEmployeeName.Text;
+            newEmployee.EmployeeId = txtEmployeeDi.TabIndex;
+            newEmployee.EmployeeName = txtEmployeeName.Text;
            // newEmployee.DateOfBirth = dtpEmployeeDOB.Value;
            // newEmployee.Certificate = lstCertificate.SelectedItem.ToString();
            // MessageBox.Show("Employee added successfully \n" + newEmployee.EmployeeReport());
