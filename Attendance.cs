@@ -10,7 +10,7 @@ namespace HR_Manager_AD0667
     {
         // list to hold all the degree
 
-        private int StudentCounter = 0;
+        private int EmployeeCounter = 0;
 
         public frmAttendance()
         {
@@ -18,7 +18,9 @@ namespace HR_Manager_AD0667
         }
         private void frmAttendance_Load(object sender, EventArgs e)
         {
-            StudentCounter++;
+            EmployeeCounter++;
+          //  dgvAttendance.DataSource = EmployeeDAL.GetAllPatients();
+
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -30,5 +32,21 @@ namespace HR_Manager_AD0667
             {
             }
         }
+       /* private void btnAddEmployee_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Employee newEmployee = new Employee();
+                newEmployee.EmployeeName = textBox3.Text;
+
+                EmployeeDAL.CreateEmployee(newEmployee);
+
+                dgvAttendance.DataSource = EmployeeDAL.GetAllEmployee();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }*/
     }
 }

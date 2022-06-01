@@ -61,7 +61,6 @@
     </Compile>
     <Compile Include="Date Base\Employee.cs" />
     <Compile Include="Date Base\EmployeeDAL.cs" />
-    <Compile Include="Date Base\EmployeeDALBase.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -31,15 +31,11 @@ namespace HR_Manager_AD0667.DataAccess
         public static Employee GetEmployeeById(int id)
         {
             Employee employee = new Employee();
-
             string commandString = string.Format("Select * from Employee where EmployeeId = {0}", id);
 
             OleDbCommand command = new OleDbCommand(commandString, connection);
-
             connection.Open();
-
             OleDbDataReader EmployeeReader = command.ExecuteReader();
-
             if (EmployeeReader.HasRows)
             {
                 while (EmployeeReader.Read())
@@ -51,7 +47,7 @@ namespace HR_Manager_AD0667.DataAccess
             connection.Close();
             return Employee;
         }
-        public static void CreateEmployee(Employee employee)
+        /*public static void CreateEmployee(Employee employee)
         {
             string commandString = string.Format("Insert into Employees(EmployeetName) values('{0}')", Employee.EmployeeName);
             OleDbCommand command = new OleDbCommand(commandString, connection);
@@ -79,6 +75,6 @@ namespace HR_Manager_AD0667.DataAccess
             connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
-        }
+        }*/
     }
 }
