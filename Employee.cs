@@ -17,7 +17,7 @@ namespace HR_Manager_AD0667
         {
 
         }
-        public Employee(string empId, string name, DateTime dateTime, string certificate)
+       /* public Employee(string empId, string name, DateTime dateTime, string certificate)
         {
             this.EmpId = empId;
             this.Name = name;
@@ -30,6 +30,6 @@ namespace HR_Manager_AD0667
                 + DateOfBirth.ToShortDateString() + "\nEmployee Certificate : " + Certificate;
 
             return report;
-        }
+        }*/
     }
 }
