@@ -42,7 +42,6 @@ namespace HR_Manager_AD0667
         private void dgvAttendance_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string nameValue = dgvAttendance.Rows[e.RowIndex].Cells[1].Value.ToString();
-
             txtEmployeeName.Text = nameValue;
         }
         private void btnAddEmployee_Click(object sender, EventArgs e)

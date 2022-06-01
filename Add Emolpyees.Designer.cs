@@ -190,7 +190,6 @@
             this.Name = "frmAddEmolpyees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Emolpyees";
-            this.Activated += new System.EventHandler(this.frmNavigation_Activated);
             this.Load += new System.EventHandler(this.frmNavigation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

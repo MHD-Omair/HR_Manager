@@ -30,10 +30,7 @@ namespace HR_Manager_AD0667
         {
             addDegree.Add(degree);
             AddDegreeBindingSource.ResetBindings(false);
-           // MessageBox.Show("iteat " + addDegree.Count);
-        }
-        private void frmNavigation_Activated(object sender, EventArgs e)
-        {
+            MessageBox.Show("iteat " + addDegree.Count);
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

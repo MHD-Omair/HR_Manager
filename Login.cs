@@ -20,8 +20,8 @@ namespace HR_Manager_AD0667
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-         //   if (txtUserName.Text == "admin" && txtPassword.Text == "Admin")
-         //   {
+            if (txtUserName.Text == "admin" && txtPassword.Text == "Admin")
+            {
                 pnlToNavi.BringToFront();
 
                 frmNavigation frmNavigation = new frmNavigation() 
@@ -32,13 +32,13 @@ namespace HR_Manager_AD0667
                 frmNavigation.Show();
            
             frmNavigation.instance.lblPUN.Text = "Welcome " + txtUsername.Text;
-         //   }
-         //   else
-         //       MessageBox.Show("The Username or Password you entered is incorrect," 
-         //           +" try agin");
-         //       txtPassword.Clear();
-         //       txtUserName.Clear();
-         //       txtUserName.Focus();
+            }
+            else
+                MessageBox.Show("The Username or Password you entered is incorrect," 
+                    +" try agin");
+                txtPassword.Clear();
+                txtUserName.Clear();
+                txtUserName.Focus();
         }
         private void lblUNBar_Click_1(object sender, EventArgs e)
         {
