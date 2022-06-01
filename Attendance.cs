@@ -32,7 +32,7 @@ namespace HR_Manager_AD0667
             {
             }
         }
-       /* private void btnAddEmployee_Click(object sender, EventArgs e)
+        private void btnAddEmployee_Click(object sender, EventArgs e)
         {
             try
             {
@@ -47,6 +47,6 @@ namespace HR_Manager_AD0667
             {
                 MessageBox.Show(ex.Message);
             }
-        }*/
+        }
     }
 }
