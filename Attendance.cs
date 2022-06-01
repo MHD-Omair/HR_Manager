@@ -39,6 +39,12 @@ namespace HR_Manager_AD0667
             {
             }
         }
+        private void dgvAttendance_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string nameValue = dgvAttendance.Rows[e.RowIndex].Cells[1].Value.ToString();
+
+            txtEmployeeName.Text = nameValue;
+        }
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
             try
@@ -55,12 +61,37 @@ namespace HR_Manager_AD0667
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void dgvAttendance_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            string nameValue = dgvAttendance.Rows[e.RowIndex].Cells[1].Value.ToString();
+            try
+            {
+                Employee newEmployee = new Employee();
+                newEmployee.EmployeeName = txtEmployeeName.Text;
 
-            txtEmployeeName.Text = nameValue;
+                EmployeeDAL.DeleteEmployee(0);
+
+                dgvAttendance.DataSource = EmployeeDAL.GetAllEmployee();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void btnUpdata_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Employee newEmployee = new Employee();
+                newEmployee.EmployeeName = txtEmployeeName.Text;
+
+                EmployeeDAL.UpdateEmployee(newEmployee);
+
+                dgvAttendance.DataSource = EmployeeDAL.GetAllEmployee();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
