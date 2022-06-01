@@ -53,16 +53,13 @@ namespace HR_Manager_AD0667.DataAccess
         }
         public static void CreateEmployee(Employee employee)
         {
-            string commandString = string.Format("Insert into Employees(EmployeetName) values('{0}')",
-                Employee.EmployeeName);
-
+            string commandString = string.Format("Insert into Employees(EmployeetName) values('{0}')", Employee.EmployeeName);
             OleDbCommand command = new OleDbCommand(commandString, connection);
 
             connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
         }
-
         public static void UpdateEmployee(Employee employee)
         {
             string commandString = string.Format("Update Employees Set EmployeeName = '{0}'",Employee.EmployeeName);
@@ -73,7 +70,6 @@ namespace HR_Manager_AD0667.DataAccess
             command.ExecuteNonQuery();
             connection.Close();
         }
-
         public static void DeleteEmployee(int id)
         {
             string commandString = string.Format("Delete from Employees where EmployeeId = {0}",id);
