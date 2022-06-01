@@ -14,6 +14,7 @@ namespace HR_Manager_AD0667
         "Data Source=C:\\Users\\mhdom\\OneDrive\\Desktop\\UI\\برمجة مرئية\\HR_Manager_AD0667-master\\DataBase";
 
         public static OleDbConnection connection = new OleDbConnection(connectionString);
+
         public static DataTable GetAllEmployee()
         {
             string commandString = "Select * from Employees";
