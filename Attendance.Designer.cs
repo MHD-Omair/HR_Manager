@@ -31,7 +31,7 @@
             this.lblAttendance = new System.Windows.Forms.Label();
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmployeeName = new System.Windows.Forms.TextBox();
             this.lblEmployeeName = new System.Windows.Forms.Label();
             this.lblEmployeeId = new System.Windows.Forms.Label();
             this.dtpEmployeeDOB = new System.Windows.Forms.DateTimePicker();
@@ -67,6 +67,7 @@
             this.dgvAttendance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAttendance.Size = new System.Drawing.Size(549, 289);
             this.dgvAttendance.TabIndex = 26;
+            this.dgvAttendance.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAttendance_CellContentClick);
             // 
             // textBox1
             // 
@@ -76,23 +77,23 @@
             this.textBox1.Size = new System.Drawing.Size(227, 22);
             this.textBox1.TabIndex = 27;
             // 
-            // textBox3
+            // txtEmployeeName
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(179, 185);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(227, 22);
-            this.textBox3.TabIndex = 29;
+            this.txtEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeName.Location = new System.Drawing.Point(179, 185);
+            this.txtEmployeeName.Name = "txtEmployeeName";
+            this.txtEmployeeName.Size = new System.Drawing.Size(227, 22);
+            this.txtEmployeeName.TabIndex = 29;
             // 
             // lblEmployeeName
             // 
             this.lblEmployeeName.AutoSize = true;
             this.lblEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.lblEmployeeName.Location = new System.Drawing.Point(49, 182);
+            this.lblEmployeeName.Location = new System.Drawing.Point(4, 181);
             this.lblEmployeeName.Name = "lblEmployeeName";
-            this.lblEmployeeName.Size = new System.Drawing.Size(121, 25);
+            this.lblEmployeeName.Size = new System.Drawing.Size(169, 25);
             this.lblEmployeeName.TabIndex = 30;
-            this.lblEmployeeName.Text = "Attendance";
+            this.lblEmployeeName.Text = "Employee Name";
             // 
             // lblEmployeeId
             // 
@@ -171,7 +172,7 @@
             this.btnAddEmployee.TabIndex = 38;
             this.btnAddEmployee.Text = "Add Employee";
             this.btnAddEmployee.UseVisualStyleBackColor = true;
-            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click_1);
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // btnUpdata
             // 
@@ -209,7 +210,7 @@
             this.Controls.Add(this.lstCertificate);
             this.Controls.Add(this.lblEmployeeId);
             this.Controls.Add(this.lblEmployeeName);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtEmployeeName);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvAttendance);
             this.Controls.Add(this.lblAttendance);
@@ -227,7 +228,7 @@
         private System.Windows.Forms.Label lblAttendance;
         private System.Windows.Forms.DataGridView dgvAttendance;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEmployeeName;
         private System.Windows.Forms.Label lblEmployeeName;
         private System.Windows.Forms.Label lblEmployeeId;
         private System.Windows.Forms.DateTimePicker dtpEmployeeDOB;

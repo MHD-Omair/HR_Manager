@@ -28,16 +28,7 @@ namespace HR_Manager_AD0667
         {
             EmployeeCounter++;
             //  dgvAttendance.DataSource = EmployeeDAL.GetAllPatients();
-            string commandString = "Select * from Employees";
-            OleDbCommand command = new OleDbCommand(commandString, connection);
-
-            OleDbDataAdapter adapter = new OleDbDataAdapter(command);
-
-            DataTable table = new DataTable();
-
-            adapter.Fill(table);
-
-            dgvAttendance.DataSource = table;
+            dgvAttendance.DataSource = EmployeeDAL.GetAllEmployee();
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -54,7 +45,7 @@ namespace HR_Manager_AD0667
             try
             {
                 Employee newEmployee = new Employee();
-                newEmployee.EmployeeName = textBox3.Text;
+                newEmployee.EmployeeName = txtEmployeeName.Text;
 
                 EmployeeDAL.CreateEmployee(newEmployee);
 
@@ -66,14 +57,11 @@ namespace HR_Manager_AD0667
             }
         }
 
-        private void btnAddEmployee_Click_1(object sender, EventArgs e)
+        private void dgvAttendance_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string commandString = "Insert into Students(StudentNo, StudentFirstName, StudentLastName) Values('ah0011', 'Ruba', 'Saeed')";
-            OleDbCommand command = new OleDbCommand(commandString, connection);
+            string nameValue = dgvAttendance.Rows[e.RowIndex].Cells[1].Value.ToString();
 
-            connection.Open();
-            command.ExecuteNonQuery();
-            connection.Close();
+            txtEmployeeName.Text = nameValue;
         }
     }
 }
