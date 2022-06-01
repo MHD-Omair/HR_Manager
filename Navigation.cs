@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace HR_Manager_AD0667
 {
     public partial class frmNavigation : Form

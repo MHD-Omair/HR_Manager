@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
-
 namespace HR_Manager_AD0667
 {
     public partial class frmAttendance : Form
