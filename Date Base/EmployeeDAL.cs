@@ -29,9 +29,9 @@ namespace HR_Manager_AD0667
 
             return employeesTable;
         }
-        public static employee GetEmployeeById(int id)
+        public static Employee GetEmployeeById(int id)
         {
-            employee employee = new employee();
+            Employee employee = new Employee();
             string commandString = string.Format("Select * from Employees where EmployeeId = {0}", id);
 
             OleDbCommand command = new OleDbCommand(commandString, connection);
@@ -48,9 +48,9 @@ namespace HR_Manager_AD0667
             connection.Close();
             return employee;
         }
-        /*public static void CreateEmployee(Employee employee)
+        public static void CreateEmployee(Employee employee)
         {
-            string commandString = string.Format("Insert into Employees(EmployeetName) values('{0}')", Employee.EmployeeName);
+            string commandString = string.Format("Insert into Employees(EmployeetName) values('{0}')", employee.EmployeeName);
             OleDbCommand command = new OleDbCommand(commandString, connection);
 
             connection.Open();
@@ -59,7 +59,7 @@ namespace HR_Manager_AD0667
         }
         public static void UpdateEmployee(Employee employee)
         {
-            string commandString = string.Format("Update Employees Set EmployeeName = '{0}'",Employee.EmployeeName);
+            string commandString = string.Format("Update Employees Set EmployeeName = '{0}'",employee.EmployeeName);
             OleDbCommand command = new OleDbCommand(commandString, connection);
             connection.Close();
 
@@ -76,6 +76,6 @@ namespace HR_Manager_AD0667
             connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
-        }*/
+        }
     }
 }
