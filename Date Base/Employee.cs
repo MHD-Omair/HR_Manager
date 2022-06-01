@@ -8,7 +8,7 @@ namespace HR_Manager_AD0667
 {
     internal class Employee
     {
-        public string EmployeeId { get; set; }
+        public int EmployeeId { get; set; }
         public string EmployeeName { get; set; }
        // public DateTime DateOfBirth { get; set; }
        // public string Certificate { get; set; }

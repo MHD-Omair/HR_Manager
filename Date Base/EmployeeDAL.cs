@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Data;
 
-namespace HR_Manager_AD0667.DataAccess
+namespace HR_Manager_AD0667
 {
     public static class EmployeeDAL
     {
