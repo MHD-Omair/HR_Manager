@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace HR_Manager_AD0667
 {
-    public partial class frmHRManager : Form
+    public partial class frmLogin : Form
     {
         public TextBox txtUsername;
 
-        public frmHRManager()
+        public frmLogin()
         {
             InitializeComponent();
             txtUsername = txtUserName;

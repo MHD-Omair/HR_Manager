@@ -16,7 +16,7 @@ namespace HR_Manager_AD0667
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmHRManager());
+            Application.Run(new frmLogin());
         }
     }
 }
