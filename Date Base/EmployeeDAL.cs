@@ -11,7 +11,7 @@ namespace HR_Manager_AD0667
     public static class EmployeeDAL
     {
         private static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;" +
-        "Data Source=C:\\Users\\mhdom\\OneDrive\\Desktop\\UI\\برمجة مرئية\\HR_Manager_AD0667-master\\DataBase";
+        "Data Source=C:\\Users\\mhdom\\source\\repos\\MHD-Omair\\HR_Manager\\DataBase";
 
         public static OleDbConnection connection = new OleDbConnection(connectionString);
 
