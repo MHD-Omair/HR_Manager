@@ -16,11 +16,14 @@ namespace HR_Manager_AD0667
         public static OleDbConnection connection = new OleDbConnection(connectionString);
         public static DataTable GetAllEmployee()
         {
-            string commandString = "Select * form Employee";
+            string commandString = "Select * from Patients";
 
-            OleDbCommand command = new OleDbCommand(connectionString, connection);
+            OleDbCommand command = new OleDbCommand(commandString, connection);
+
             OleDbDataAdapter da = new OleDbDataAdapter(command);
+
             DataTable EmployeeTable = new DataTable();
+
             da.Fill(EmployeeTable);
 
             return EmployeeTable;
