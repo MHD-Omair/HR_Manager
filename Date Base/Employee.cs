@@ -8,16 +8,16 @@ namespace HR_Manager_AD0667
 {
     internal class Employee
     {
-        public string EmpId { get; set; }
-        public string Name { get; set; }
+        public string EmployeeId { get; set; }
+        public string EmployeeName { get; set; }
        // public DateTime DateOfBirth { get; set; }
        // public string Certificate { get; set; }
 
-        public Employee()
+       /* public Employee()
         {
 
         }
-       /* public Employee(string empId, string name, DateTime dateTime, string certificate)
+        public Employee(string empId, string name, DateTime dateTime, string certificate)
         {
             this.EmpId = empId;
             this.Name = name;
