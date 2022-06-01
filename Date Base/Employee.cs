@@ -13,23 +13,23 @@ namespace HR_Manager_AD0667
        // public DateTime DateOfBirth { get; set; }
        // public string Certificate { get; set; }
 
-       /* public Employee()
+        public Employee()
         {
 
         }
-        public Employee(string empId, string name, DateTime dateTime, string certificate)
+        public Employee(int empId, string name, DateTime dateTime, string certificate)
         {
-            this.EmpId = empId;
-            this.Name = name;
-            this.DateOfBirth = dateTime;
-            this.Certificate = certificate;
+            this.EmployeeId = empId;
+            this.EmployeeName = name;
+            //this.DateOfBirth = dateTime;
+           // this.Certificate = certificate;
         }
         public string EmployeeReport()
         {
-            string report = "Employee ID : " + EmpId + "\nEmployee : " + Name + "\nEmployee DOB : " 
-                + DateOfBirth.ToShortDateString() + "\nEmployee Certificate : " + Certificate;
+            string report = "Employee ID : " + EmployeeId + "\nEmployee : " + EmployeeName /*+ "\nEmployee DOB : " 
+                + DateOfBirth.ToShortDateString() + "\nEmployee Certificate : " + Certificate*/;
 
             return report;
-        }*/
+        }
     }
 }
